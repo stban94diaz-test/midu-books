@@ -52,3 +52,6 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+
+## Based on [El FUTURO de la PROGRAMACIÓN WEB: View Transitions API 🤯](https://www.youtube.com/watch?v=ODv-VFRFGcY&ab_channel=midulive)
