@@ -1,0 +1,19 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "always"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "prettier"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "prettier"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "prettier"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "prettier"
+  }
+}
