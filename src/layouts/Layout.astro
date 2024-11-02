@@ -1,9 +1,10 @@
 ---
 interface Props {
 	title: string;
+	class?: string | null;
 }
 
-const { title } = Astro.props;
+const { title, class: cs } = Astro.props;
 ---
 
 <!doctype html>
@@ -17,7 +18,9 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<slot />
+		<main class={`bg-white min-h-screen m-auto max-w-4xl px-4 ${cs}`}>
+			<slot />
+		</main>
 	</body>
 </html>
 <style is:global>
