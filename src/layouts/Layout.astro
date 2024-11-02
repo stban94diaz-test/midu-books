@@ -15,6 +15,9 @@ const { title, class: cs } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<!-- Esto es para activar las transacciones del mismo dominio u origen, -->
+		<!-- para evitar que intente animar otra pagina X -->
+		<meta name="view-transition" content="same-origin" />
 		<title>{title}</title>
 	</head>
 	<body>
@@ -51,3 +54,9 @@ const { title, class: cs } = Astro.props;
 			monospace;
 	}
 </style>
+
+<script>
+	import { startViewTransition } from "../utils/navigation";
+
+	startViewTransition();
+</script>
